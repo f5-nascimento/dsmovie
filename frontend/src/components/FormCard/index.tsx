@@ -1,6 +1,6 @@
 import './styles.css';
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { MoviePage, Movie } from "types/movie";
+import { Link, useNavigate} from "react-router-dom";
+import { Movie } from "types/movie";
 import { useEffect, useState } from 'react';
 import axios, { AxiosRequestConfig } from 'axios';
 import { BASE_URL } from 'utils/request';
