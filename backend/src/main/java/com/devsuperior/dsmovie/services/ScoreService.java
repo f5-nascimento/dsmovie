@@ -54,7 +54,7 @@ public class ScoreService {
 		score.setValue(dto.getScore());
 		score = scoreRepository.saveAndFlush(score);
 		
-		double sum = 0;
+		double sum = 0.0;
 		for (Score s : movie.getScores()) {
 			
 			sum = sum+s.getValue();
@@ -67,7 +67,7 @@ public class ScoreService {
 		movie.setScore(avg);
 		movie.setCount(movie.getScores().size());
 		
-		movie = movieRepository.saveAndFlush(movie);
+		movie = movieRepository.save(movie);
 		
 		return new MovieDTO(movie);
 	}
