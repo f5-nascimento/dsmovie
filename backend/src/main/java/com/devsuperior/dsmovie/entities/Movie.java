@@ -58,7 +58,7 @@ public class Movie {
 	}
 
 	public void setScore(Double score) {
-		score = score;
+		this.score = score;
 	}
 
 	public Integer getCount() {
